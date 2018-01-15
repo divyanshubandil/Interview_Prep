@@ -1,0 +1,1 @@
+https://web.stanford.edu/~ouster/cgi-bin/cs140-winter16/lectures.php
