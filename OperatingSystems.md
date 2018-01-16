@@ -40,7 +40,8 @@ https://web.stanford.edu/~ouster/cgi-bin/cs140-winter16/lectures.php
 - Synchornization
 - Critical Section : One thread executes at a time
 - Mutual exclusion : mechanisms used to create critical sections.
-- Peterson's Algorithm
+
+### Peterson's Algorithm
 
 ```c
 bool flag[0] = {false};
