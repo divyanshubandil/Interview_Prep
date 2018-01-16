@@ -22,12 +22,12 @@ https://web.stanford.edu/~ouster/cgi-bin/cs140-winter16/lectures.php
 - Create and initialize PCB, load code and data in memory, create first thread with call stack, provide inital values for "saved state", send thread to dispatcher, dispatcher "resumes" to start of new program
 - UNIX - fork (copy of current process with one thread), exec(loads code and data in memory), waitpid ( waits for the given process to exit)
 - ```c
-int pid = fork();
-if (pid == 0) {
-    /* Child process  */
-    exec("foo");
-} else {
-    /* Parent process */
-    waitpid(pid, &status, options);
-}
-```
+    int pid = fork();
+    if (pid == 0) {
+        /* Child process  */
+        exec("foo");
+    } else {
+        /* Parent process */
+        waitpid(pid, &status, options);
+    }
+    ```
