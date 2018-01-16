@@ -40,8 +40,9 @@ https://web.stanford.edu/~ouster/cgi-bin/cs140-winter16/lectures.php
 - Synchornization
 - Critical Section : One thread executes at a time
 - Mutual exclusion : mechanisms used to create critical sections.
+- Busy waiting : while one thread waits for the other it consumes resources
 
-### Peterson's Algorithm
+#### Peterson's Algorithm (No Busy Waiting)
 
 ```c
 bool flag[0] = {false};
