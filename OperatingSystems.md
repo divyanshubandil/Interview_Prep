@@ -32,3 +32,38 @@ https://web.stanford.edu/~ouster/cgi-bin/cs140-winter16/lectures.php
         waitpid(pid, &status, options);
     }
 ```
+
+## Concurrency
+- Independent thread : Does not share state
+- Cooperating thread : Share state (Order of some operations is irrelevant)
+- Atomic Operations
+- Synchornization
+- Critical Section : One thread executes at a time
+- Mutual exclusion : mechanisms used to create critical sections.
+- Peterson's Algorithm
+
+```c
+bool flag[0] = {false};
+bool flag[1] = {false};
+int turn;
+P0:      flag[0] = true;
+P0_gate: turn = 1;
+         while (flag[1] == true && turn == 1)
+         {
+             // busy wait
+         }
+         // critical section
+         ...
+         // end of critical section
+         flag[0] = false;
+P1:      flag[1] = true;
+P1_gate: turn = 0;
+         while (flag[0] == true && turn == 0)
+         {
+             // busy wait
+         }
+         // critical section
+         ...
+         // end of critical section
+         flag[1] = false;
+```
