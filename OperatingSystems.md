@@ -187,4 +187,4 @@ lock_release(l1);      lock_release(l2);
   - Multiple independent requests: threads don't ask for resources all at once (hold resources while waiting).
   - A circularity in the graph of requests and ownership.
 
-- Solution : Break the circularity : all threads **request resources in the same order** 
+- Solution : Break the circularity : all threads **request resources in the same order**
