@@ -1,0 +1,87 @@
+arr = [1,3,4,7,6]
+
+3,4,7,6,1
+4,7,6,1,3
+
+
+rotate(int[] arr, int numberofRotations){
+
+    int [] newarr = new int[arr.length];
+  numberofRotations = numberofRotations%(arr.length);
+  for(int i = 0; i < arr.length; i++){
+    int newindex = i + numberofRotations;
+    if(newindex > arr.length-1){
+      newindex = newindex - arr.length;    
+    }
+    newarr[newindex] = arr[i];  
+  }
+  return newarr;
+
+}
+
+Biggest differnce
+arr = [1,3,4,7,6]
+
+O(n2) 
+O{nlogn}->sort
+min,max
+
+
+Class Employee{
+          Int empId;
+          String deptName;
+          
+          Employee(empId,deptName){
+          .....
+          }
+
+}
+
+Employee emp1 = new Employee(1,”Risk”);
+Employee emp2 = new Employee(1,”Risk”);
+
+ 
+
+Set set = new HashSet();
+set.add(emp1);
+set.add(emp2);
+set.size()?
+
+
+@post
+/Employee/
+{
+  empId:1,
+  deptName:"Risk"
+
+}
+
+Search a word in a file and give the count. 
+C:/file.txt
+
+long count(String filePath, String word){
+filehandle = file.open(filePath);
+int count = 0;
+while(EOF is not reached){
+  if(filehandle == word.charAt(0)){
+  int i = 0;
+  while(i < word.length() && (filehandle) == word.charAt(i)){
+      i++;
+      filehandle++;
+  }
+  if (i == word.length()){
+   count++;
+  
+   }
+  }
+ } 
+  return count;
+
+}
+
+
+
+}
+
+}
+
